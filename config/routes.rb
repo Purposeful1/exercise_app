@@ -1,4 +1,24 @@
 ExerciseApp::Application.routes.draw do
+  get "pages/welcome"
+
+  get "pages/blog"
+
+  get "pages/about"
+
+  get "pages/contact"
+
+  get "pages/signup"
+
+  get "pages/login"
+
+  get "pages/team"
+
+  get "pages/progress"
+
+  get "pages/friends"
+
+  get "pages/profile"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
