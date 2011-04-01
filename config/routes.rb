@@ -20,6 +20,7 @@ ExerciseApp::Application.routes.draw do
   get "pages/profile"
   
   match '/about', :to => 'pages#about'
+  match '/blog', :to => 'pages#blog'
   match '/contact', :to => 'pages#contact'
   match '/signup', :to => 'pages#signup'
   match '/login', :to => 'pages#login'
@@ -27,7 +28,7 @@ ExerciseApp::Application.routes.draw do
   match '/progress', :to => 'pages#progress'
   match '/friends', :to => 'pages#friends'
   match '/profile', :to => 'pages#profile'
-  match '/welcome', :to => 'pages#welcome'
+
   
   root :to => 'pages#welcome'
   # The priority is based upon order of creation:
