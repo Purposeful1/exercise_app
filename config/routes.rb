@@ -1,4 +1,6 @@
 ExerciseApp::Application.routes.draw do
+  get "users/new"
+
   get "pages/welcome"
 
   get "pages/blog"
@@ -22,7 +24,7 @@ ExerciseApp::Application.routes.draw do
   match '/about', :to => 'pages#about'
   match '/blog', :to => 'pages#blog'
   match '/contact', :to => 'pages#contact'
-  match '/signup', :to => 'pages#signup'
+  match '/signup', :to => 'users#new'
   match '/login', :to => 'pages#login'
   match '/team', :to => 'pages#team'
   match '/progress', :to => 'pages#progress'

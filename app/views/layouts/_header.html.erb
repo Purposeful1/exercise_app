@@ -1,0 +1,14 @@
+<header>
+	<% logo = image_tag("screen-capture-15final.png", :alt => "Exercise App", :class => "round") %>
+	<%= link_to logo, root_path %>
+	<nav class="round">
+		<ul>
+			<li><%= link_to "Welcome", root_path %></li>
+			<li><%= link_to "Our Blog", blog_path %></li>
+			<li><%= link_to "About Us", about_path %></li>
+			<li><%= link_to "Contact Us", contact_path %></li>
+			<li><%= link_to "Sign Up", signup_path %></li>				
+			<li><%= link_to "Log in", login_path %></li>		
+		</ul>
+	</nav>
+</header>
