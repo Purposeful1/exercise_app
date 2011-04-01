@@ -3,31 +3,12 @@
 <head>
   <title><%= @title %></title>
   <%= csrf_meta_tag %>
-  <!--[if lt IE 9]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-  <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
-  <%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
-  <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
-	<%= stylesheet_link_tag 'custom', :media => 'screen' %>
+  <%= render 'layouts/stylesheets' %>
   <%= javascript_include_tag :defaults %>
-
 </head>
 <body>
   <div class="container">
-		<header>
-			<%= image_tag("screen-capture-15final.png", :alt => "Exercise App", :class => "round") %>
-			<nav class="round">
-				<ul>
-					<li><%= link_to "Welcome", "#" %></li>
-					<li><%= link_to "Our Blog", "#" %></li>
-					<li><%= link_to "About Us", "#" %></li>
-					<li><%= link_to "Contact Us", "#" %></li>
-					<li><%= link_to "Sign Up", "#" %></li>				
-					<li><%= link_to "Log in", "#" %></li>		
-				</ul>
-			</nav>
-		</header>
+    <%= render 'layouts/header' %>
 		<section class="round">		
 			<%= yield %>
 		</section>
