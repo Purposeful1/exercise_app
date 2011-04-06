@@ -1,5 +1,5 @@
 ExerciseApp::Application.routes.draw do
-  get "users/new"
+  resources :users
 
   get "pages/welcome"
 
